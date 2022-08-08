@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --font-base: #c4c4cc;
+    --font-focus: #FFFFFF;
+    --font-title: #E1E1E6;
+    --font-textbutton: #02799D;
+}
+
+body {
+    background-image: url(./assets/mountains-universe-1.png);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 85vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+body.universe {
+    background-image: url('./assets/mountains-universe02.png');
+    width: 100vw;
+    height: 85vh;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* overflow-x: hidden; */
+}
+
+body.explore {
+    background-image: url('/assets/mountains-universe-3.png');
+    width: 100vw;
+    height: 85vh;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* overflow-x: hidden; */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 48.9rem;
+    height: 4.2rem;
+
+    margin-top: 4rem;
+    margin-left: 7.2rem;
+}
+
+a {
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 22px;
+    color: var(--font-base);
+    text-decoration: none;
+}
+
+body, main, a, button, p {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.checked {
+    color: var(--font-focus);
+    font-weight: 700;
+    /* outline: none; */
+}
+
+main.pages, .error {
+    margin-left: 10.2rem;
+    /* margin-top: 6.3rem; */
+    width: 648px;
+    height: 203px;
+    
+}
+
+
+
+main.pages h1 {
+    color: var(--font-title);
+    font-weight: 700;
+    font-size: 4.8rem;
+    margin-top: 18.3rem;
+}
+
+
+
+main.pages p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 160%;
+    color: var(--font-title);
+    margin-top: 1.6rem;
+}
+
+main.content {
+    display: grid;
+    place-items: center;
+    margin-top: 17.2rem;
+
+    color: var(--font-title);
+    font-weight: 700;
+    font-size: 2.4rem;
+
+    
+}
+
+
+.button {
+
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--font-focus);
+
+    border: 2px solid var(--font-focus);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem 3.2rem;
+    gap: 8px;
+
+    background-color: transparent;
+    cursor: pointer;
+
+    margin-top: 2.4rem;
+    transition: 0.4s;
+}
+
+.button:hover {
+    background: var(--font-focus);
+    color: var(--font-textbutton);
+
+}
+
+
+strong {
+    color: var(--font-textbutton);
+}
